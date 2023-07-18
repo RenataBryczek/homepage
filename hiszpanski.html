@@ -1,0 +1,41 @@
+<!--żeby zrobić szkielet strony: ! + TAB-->
+<!--żeby sformatować kod: -->
+<!DOCTYPE html>
+<html lang="pl"> <!--KORZEŃ STRONY. atrybut lang to język strony - wpisujemy pl dla czytników ekranowych-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>stronka bez strąka</title>
+	<link href="style.css" rel="stylesheet" type="text/css"> <!--tu mam link do pliku ze stylami - musi byś w head-->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">.początek</a>
+            <a href="hiszpanski.html">.hiszpanski</a>
+        </nav>
+	<main>
+		<header id="top">
+			<h1>.hiszpański z oka przymrużeniem dłuższym</h1> <!--h1 powinien być jedne dla całego dokumentu-->
+		</header>
+		<section>
+			<h2>.moje ulubione hiszpańskie słowa</h2>
+			<p>No to wypadałoby zacząć od ulubionego najbardziej. Nawet, jeśli wszyscy wiedzą, że wszelkie rankingi aktualne są tylko i wyłącznie na moment ich sporządzania (podobnie, jak harmonogramy w projektach).</p> <!--tekst nie może sobie luźno leżeć, stąd opakowujemy w znacznik p-->
+			<article> <!--artykuł to taka samodzielna treść-->
+				<h3>.mañana</h3>
+				<p>Nie mylić z manianą. Ani z jakimkolwiek innym polskim spolszczeniem.</p><!--tu sobie zrobiłam przejście do następnej linii using br-->
+			</article>
+			<article> <!--artykuł to taka samodzielna treść-->
+				<h3>.hola</h3>
+				<p>Hola, hola, tu nie można palić!</p>
+			</article>
+		</section>
+	</main>
+    <footer> <!--ta stopka dotyczy całego dokumentu-->
+        <p>.to jest miejsce w przestrzeni stworzone, wykreowane, a może wymyślone i wyprodukowane do celów samorozwoju piszącej te słowa osoby, która nie wierzy, ale nieustannie i bezwarunkowo czuje, że każda chwila jest początkiem nowego życia.<a href="#top">Do góry 🚀</a></p>
+    </footer>
+</body>
+
+</html>
