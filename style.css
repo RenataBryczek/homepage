@@ -17,11 +17,118 @@ section a {
     color:rgb(249, 226, 15);
 }
 
- .o-mnie {
-    color:rgb(73, 38, 0);
+/*tu mam miks formatowania dla klasy i elementu*/
+.o-mnie {
+    background-color: rgb(154, 250, 218);
+    color: rgb(25, 54, 199);
 }
 
-/*tu mam miks formatowania dla klasy i elementu*/
-.o-mnie p {
-    background-color: rgb(154, 250, 218);
+.box__display-block {
+    background:#fbb92a;
+    width: 300px;
+    min-height: 50px;
+}
+
+.box__display-block a {
+    display:block; /*link został przerzucony do kolejnej linii, ale też tekst za nim LINK JEST KLIKALNY PO CAŁOŚCI!!!*/
+}
+
+.box__display-inline {
+    background:#f8aa03;
+    display: inline;
+}
+
+.box__display-inline-block_001 {
+    background:#d69302;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+.box__display-inline-block_002 {
+    background:#cccac5;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+.box__display-inline-block_003 {
+    background:#a16e00;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+.box__display-inline-block_004 {
+    background:#cccac566;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+.box__max-width_001 {
+    background:#d69302;
+    max-width: 600px;
+    height: 300px;
+}
+
+.box__max-width_002 {
+    background:#cccac5;
+    max-width: 600px;
+    height: 300px;
+}
+
+.box__max-width_003 {
+    background:#a16e00;
+    max-width: 600px;
+    height: 300px;
+}
+
+.box__max-width_004 {
+    background:#cccac566;
+    max-width: 600px;
+    height: 300px;
+}
+
+.box__overflow-hidden_001 {
+    background:#d69302;
+    max-width: 600px;
+    height: 48px;
+    overflow:hidden;
+}
+
+.box__overflow-hidden_002 {
+    background:#cccac5;
+    max-width: 600px;
+    height: 48px;
+    overflow:hidden;
+}
+
+.box__overflow-hidden_003 {
+    background:#a16e00;
+    max-width: 600px;
+    height: 48px;
+    overflow:hidden;
+}
+
+.box__overflow-auto_004 {
+    background:#cccac566;
+    max-width: 600px;
+    height: 48px;
+    overflow: auto; /*jak się tekst nie będzie mieścił w wysokości, to pojawi się scroll do przewijania. RÓŻNICA MIĘDZY SCROLL A AUTO -> auto zadziała tylko tam, gdzie ten scroll jest potrzebny, a scroll dla każdego boxa*/
+}
+
+.box__overflow-scroll {
+    background:#da9d19;
+    max-width: 600px;
+    height: 48px;
+    overflow: scroll; /*miejsce na scroll zostanie przygotowane dla wszystkich boxów, ale samy scroll pojawia się dla tych, dla których to jest potrzebne. RÓŻNICA MIĘDZY SCROLL A AUTO -> auto zadziała tylko tam, gdzie ten scroll jest potrzebny, a scroll dla każdego boxa*/
+}
+
+.box__overflow-visible {
+    background:#f5cb71;
+    color:rgb(5, 85, 143);
+    width: 600px;
+    height: 48px;
+    overflow: visible; /*regularnie sobie wyświetlam cały tekst - bez względu na to, czy najeżdża mi na kolejne obiekty, czy też nie*/
 }
