@@ -1,20 +1,55 @@
-body{background:#867d7db2}
-h1 {color:#0c5fbe;}
-h2 {color:#0c82a0;}
-h3 {color:#119869;}
-section {background-color: #e0eecd;}
-article {background-color: #eff4e7;}
-footer {background-color: #0c5fbe;
-color:antiquewhite;}
+html {
+    box-sizing: border-box;
+} /*fajnie mieć dla normalizacji*/
+
+*, *:before, *:after {
+    box-sizing: inherit;
+} /*fajnie mieć dla normalizacji*/
+
+body {
+    background: #867d7db2
+}
+
+header {
+    padding: 16px;
+}
+
+h1 {
+    color: #0c5fbe;
+    padding: 16px;
+}
+
+h2 {
+    color: #0c82a0;
+}
+
+h3 {
+    color: #119869;
+}
+
+section {
+    background-color: #e0eecd;
+    padding: 16px;
+}
+
+article {
+    background-color: #eff4e7;
+}
+
+footer {
+    background-color: #0c5fbe;
+    color: antiquewhite;
+    padding: 16px;
+}
 
 /*tu mam zdefiniowany color dla wszystkich linków:*/
 a {
-    color:aquamarine;
+    color: aquamarine;
 }
 
 /*tu mam zdefiniowany color dla wszystkich linków we wszystkich sekcjach*/
 section a {
-    color:rgb(249, 226, 15);
+    color: rgb(249, 226, 15);
 }
 
 /*tu mam miks formatowania dla klasy i elementu*/
@@ -23,131 +58,138 @@ section a {
     color: rgb(25, 54, 199);
 }
 
-.box__display-block { 
-    background:#fbb92a;
+.box__display-block {
+    background: #fbb92a;
     width: 300px;
     min-height: 50px;
 }
 
 .box__display-block a {
-    display:block; /*link został przerzucony do kolejnej linii, ale też tekst za nim LINK JEST KLIKALNY PO CAŁOŚCI!!!*/
+    display: block;
+    /*link został przerzucony do kolejnej linii, ale też tekst za nim LINK JEST KLIKALNY PO CAŁOŚCI!!!*/
 }
 
 .box__display-inline {
-    background:#f8aa03;
+    background: #f8aa03;
     display: inline;
 }
 
 .box__display-inline-block_001 {
-    background:#d69302;
+    background: #d69302;
     display: inline-block;
     width: 300px;
     height: 300px;
 }
 
 .box__display-inline-block_002 {
-    background:#cccac5;
+    background: #cccac5;
     display: inline-block;
     width: 300px;
     height: 300px;
 }
 
 .box__display-inline-block_003 {
-    background:#a16e00;
+    background: #a16e00;
     display: inline-block;
     width: 300px;
     height: 300px;
 }
 
 .box__display-inline-block_004 {
-    background:#cccac566;
+    background: #cccac566;
     display: inline-block;
     width: 300px;
     height: 300px;
 }
 
 .box__max-width_001 {
-    background:#d69302;
+    background: #d69302;
     max-width: 600px;
     height: 300px;
 }
 
 .box__max-width_002 {
-    background:#cccac5;
+    background: #cccac5;
     max-width: 600px;
     height: 300px;
 }
 
 .box__max-width_003 {
-    background:#a16e00;
+    background: #a16e00;
     max-width: 600px;
     height: 300px;
 }
 
 .box__max-width_004 {
-    background:#cccac566;
+    background: #cccac566;
     max-width: 600px;
     height: 300px;
 }
 
 .box__overflow-hidden_001 {
-    background:#d69302;
+    background: #d69302;
     max-width: 600px;
     height: 48px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .box__overflow-hidden_002 {
-    background:#cccac5;
+    background: #cccac5;
     max-width: 600px;
     height: 48px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .box__overflow-hidden_003 {
-    background:#a16e00;
+    background: #a16e00;
     max-width: 600px;
     height: 48px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .box__overflow-auto_004 {
-    background:#cccac566;
+    background: #cccac566;
     max-width: 600px;
     height: 48px;
-    overflow: auto; /*jak się tekst nie będzie mieścił w wysokości, to pojawi się scroll do przewijania. RÓŻNICA MIĘDZY SCROLL A AUTO -> auto zadziała tylko tam, gdzie ten scroll jest potrzebny, a scroll dla każdego boxa*/
+    overflow: auto;
+    /*jak się tekst nie będzie mieścił w wysokości, to pojawi się scroll do przewijania. RÓŻNICA MIĘDZY SCROLL A AUTO -> auto zadziała tylko tam, gdzie ten scroll jest potrzebny, a scroll dla każdego boxa*/
 }
 
 .box__overflow-scroll {
-    background:#da9d19;
+    background: #da9d19;
     max-width: 600px;
     height: 48px;
-    overflow: scroll; /*miejsce na scroll zostanie przygotowane dla wszystkich boxów, ale samy scroll pojawia się dla tych, dla których to jest potrzebne. RÓŻNICA MIĘDZY SCROLL A AUTO -> auto zadziała tylko tam, gdzie ten scroll jest potrzebny, a scroll dla każdego boxa*/
+    overflow: scroll;
+    /*miejsce na scroll zostanie przygotowane dla wszystkich boxów, ale samy scroll pojawia się dla tych, dla których to jest potrzebne. RÓŻNICA MIĘDZY SCROLL A AUTO -> auto zadziała tylko tam, gdzie ten scroll jest potrzebny, a scroll dla każdego boxa*/
     height: 100vh;
 }
 
 .box__overflow-visible {
-    background:#f5cb71;
-    color:rgb(5, 85, 143);
+    background: #f5cb71;
+    color: rgb(5, 85, 143);
     width: 600px;
     height: 48px;
-    overflow: visible; /*regularnie sobie wyświetlam cały tekst - bez względu na to, czy najeżdża mi na kolejne obiekty, czy też nie*/
+    overflow: visible;
+    /*regularnie sobie wyświetlam cały tekst - bez względu na to, czy najeżdża mi na kolejne obiekty, czy też nie*/
 }
 
 .box__padding {
     background: firebrick;
     height: 100px;
-    padding: 8px 16px 24px 32px; /*zaczynamy liczyć od północy (padding na górze TOP > RIGHT > BOTTOM > LEFT)*/
+    padding: 8px 16px 24px 32px;
+    /*zaczynamy liczyć od północy (padding na górze TOP > RIGHT > BOTTOM > LEFT)*/
     border-width: 16px;
-    border-style: solid; /*ramka stałego koloru*/
-    border-color:#f0520f;
-    border: 16px solid #f0520f; /*tak też można krócej*/
+    border-style: solid;
+    /*ramka stałego koloru*/
+    border-color: #f0520f;
+    border: 16px solid #f0520f;
+    /*tak też można krócej*/
     border-radius: 320px;
     position: relative;
 }
 
 .absolute {
-    color:#e8ca83;
+    color: #e8ca83;
     background: #d7672b;
     position: absolute;
     right: 16px;
@@ -158,7 +200,7 @@ section a {
 }
 
 .absolute-2 {
-    color:#781200;
+    color: #781200;
     background: #eccd7e;
     position: absolute;
     right: 16px;
@@ -169,7 +211,7 @@ section a {
 }
 
 .fixed {
-    color:#f9ee28;
+    color: #f9ee28;
     background: #0146a0;
     padding: 8px;
     position: fixed;
@@ -188,7 +230,7 @@ section a {
     border-radius: 100%;
     margin: 32px;
 }
- 
+
 .box__circle-auto {
     box-sizing: border-box;
     background: firebrick;
@@ -197,7 +239,8 @@ section a {
     padding: 60px;
     border: 32px solid #f0520f;
     border-radius: 100%;
-    margin: 32px auto; /*będzie wyśrodkowany*/
+    margin: 32px auto;
+    /*będzie wyśrodkowany*/
 }
 
 .box__content-box {
@@ -216,7 +259,8 @@ section a {
     height: 200px;
     padding: 60px;
     border: 32px solid #a7390a;
-    margin: 32px auto; /*będzie wyśrodkowany*/
+    margin: 32px auto;
+    /*będzie wyśrodkowany*/
 }
 
 .box__border-box-2 {
@@ -225,12 +269,14 @@ section a {
     width: 750px;
     height: 250px;
     border: 32px solid #25e418;
-    margin: 64px auto; /*będzie wyśrodkowany*/
+    margin: 64px auto;
+    /*będzie wyśrodkowany*/
 }
 
-.sticky { /*przykleja się tylko wewnątrz rodzica*/
-    background:#025103;
-    color:#25e418;
+.sticky {
+    /*przykleja się tylko wewnątrz rodzica*/
+    background: #025103;
+    color: #25e418;
     position: sticky;
     top: 20px;
 }
@@ -239,7 +285,7 @@ section a {
     width: 80px;
     height: 30px;
     background: white;
-    color:rgb(59, 88, 0);
+    color: rgb(59, 88, 0);
     margin-top: 20px;
     margin-right: 30px;
     margin-bottom: 20px;
@@ -252,8 +298,9 @@ section a {
 }
 
 .box__padding-mirror {
-    background:rgb(249, 226, 15);
-    padding: 16px 64px; /*też zaczynami liczyć od góry, ale idziemy parami: GÓRA-DÓŁ & PRAWA-LEWA*/
+    background: rgb(249, 226, 15);
+    padding: 16px 64px;
+    /*też zaczynami liczyć od góry, ale idziemy parami: GÓRA-DÓŁ & PRAWA-LEWA*/
     border-bottom: 8px solid #bef571;
     border-left: 24px solid #589009;
     z-index: -10;
