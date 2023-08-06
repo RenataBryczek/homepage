@@ -7,24 +7,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>stronka bez strąka</title>
-	<link href="normalize.css" rel="stylesheet" type="text/css">
-	<link href="style.css" rel="stylesheet" type="text/css"> <!--tu mam link do pliku ze stylami - musi byś w head-->
+	<link href="/normalize.css" rel="stylesheet" type="text/css">
+	<link href="/style.css" rel="stylesheet" type="text/css"> <!--tu mam link do pliku ze stylami - musi byś w head-->
 </head>
 
 <body>
 	<header>
-		<nav>
-			<a href="index.html">.początek</a>
-			<a href="hiszpanski.html">.hiszpanski</a>
+		<nav class="navigation">
+			<a class="navigation__link" href="index.html">.początek</a>
+			<a class="navigation__link" href="hiszpanski.html">.hiszpanski</a>
 		</nav>
 	</header>
 	<main>
-		<header id="top">
-			<h1>.stronka bez strąka</h1> <!--h1 powinien być jedne dla całego dokumentu-->
+		<header class="page-header" id="top">
+			<h1 class="page-header__heading page-header__heading--js">.stronka bez strąka</h1> <!--h1 powinien być jedne dla całego dokumentu-->
 		</header>
-		<section class="o-mnie"> <!--pierwsza sekcja o mnie-->
-			<h2>Hola! Que tal?</h2>
-			<img src="frozen-sven-and-olaf.jpg" alt="Fotka prezentująca autorkę przestrzeni"> <!--alt dla czytników-->
+		<section class="section section--o-mnie"> <!--pierwsza sekcja o mnie-->
+			<h2 class="section__header section__header--o-mnie">Hola! Que tal?</h2>
+			<img src="/frozen-sven-and-olaf.jpg" alt="Fotka prezentująca autorkę przestrzeni"> <!--alt dla czytników-->
 			<p>.skąd się tu wzięłam?</p>
 			<p>Jestem taką sobie oto osóbką, wg ziemskiego słownika płci żeńskiej (chociaż zdecydowanie wolałabym
 				określenie <a href="https://pl.wikipedia.org/wiki/Kobiecość" target="_blank">kobiecej</a>), która
@@ -33,10 +33,10 @@
 				interesujące doświadczenia.</p> <!--tekst nie może sobie luźno leżeć, stąd opakowujemy w znacznik p-->
 			<p>A podobno WHY? to najważniejsze pytanie, to <a href=#dlaczego>tu</a> moja odpowiedź na nie.</p>
 		</section>
-		<section> <!--druga sekcja z poszczególnymi artykułami-->
-			<h2>.rozkminy bez miny</h2>
-			<article> <!--artykuł to taka samodzielna treść-->
-				<h3>.z kim tu przybyłam?</h3>
+		<section class="section"> <!--druga sekcja z poszczególnymi artykułami-->
+			<h2 class="section__header">.rozkminy bez miny</h2>
+			<article class="article"> <!--artykuł to taka samodzielna treść-->
+				<h3 class="article__header">.z kim tu przybyłam?</h3>
 				<p><strong>Sam</strong>-a. Każdy człowiek przychodzi na świat <strong>sam</strong>. Tak samo
 					<strong>sam</strong> odchodzi. <br>I nie ma w tym nic smutnego, nic rozbrajającego, nic
 					kontrowersyjnego. Można podróż tę porównać do przelotu do Mediolanu, Buenos Aires czy Australii -
@@ -46,15 +46,15 @@
 				</p>
 				<!--tu sobie zrobiłam przejście do następnej linii using br-->
 			</article>
-			<article> <!--artykuł to taka samodzielna treść-->
-				<h3>.po co tu jestem?</h3>
+			<article class="article"> <!--artykuł to taka samodzielna treść-->
+				<h3 class="article__header">.po co tu jestem?</h3>
 				<p>Gdybym zastanawiała się, po co tu jestem, to raczej już dawno by mnie tu nie było. I to nie dlatego,
 					że jest tu (gdziekolwiek to 'tu' jest) źle - a raczej dlatego, że z każdym kolejnym krokiem w
 					doświadczeniu utwierdzam się w przekonaniu, że większego sensu w byciu tu nie ma. Zupełnie inaczej
 					sprawy się mają z byciem tu i teraz, ale to temat na inną rozmowę.</p>
 			</article>
 			<article id="dlaczego">
-				<h3>.dlaczego robię to, co robię</h3>
+				<h3 class="article__header">.dlaczego robię to, co robię</h3>
 				<p>Trafiony zatopiony! Pif paf! Szach i mat! Oznacza to, że nie mam bladego, ani nawet inno-kolorowego
 					pojęcia.</p>
 			</article>
@@ -227,7 +227,7 @@
 			piszącej te słowa osoby, która nie wierzy, ale nieustannie i bezwarunkowo czuje, że każda chwila jest
 			początkiem nowego życia.<a href="#top">Do góry 🚀</a></p>
 	</footer>
-	<script src="main.js"></script>
+	<script defer src="main.js"></script>
 </body>
 
 </html>
