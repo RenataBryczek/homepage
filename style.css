@@ -22,6 +22,8 @@ body {
 .page-header__heading {
     color: #0c5fbe;
     padding: 16px;
+    letter-spacing: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .section {
@@ -31,11 +33,15 @@ body {
 
 .section__header {
     color:#025143;
+    letter-spacing: -2px;
+    font-size:34px;
+    font-weight: lighter;
 }
 
 .section--o-mnie {
     background-color: rgb(154, 250, 218);
     color: rgb(25, 54, 199);
+    line-height: 1.5;
 }
 
 .section__header--o-mnie {
