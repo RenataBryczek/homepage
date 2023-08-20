@@ -13,9 +13,9 @@ const header = document.querySelector('.page-header__heading--js')
 console.log(header)
 console.log(header.innerHTML) //tu już się odnosimy do samej wartości
 
-//header.innerHTML = '.bez strąka stronka' <-- można skryptami zmienić treść
+header.innerHTML = '.bez strąka stronka' //<-- można skryptami zmienić treść
 
 console.log(header.innerHTML)
 
-//header.style.color = 'tomato' <-- można skryptami zmieniać style
+header.style.color = 'tomato'// <-- można skryptami zmieniać style
 console.log(header.style)

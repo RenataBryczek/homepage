@@ -12,32 +12,130 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navigation">
-            <a class="navigation__link" href="index.html">.początek</a>
-            <a class="navigation__link" href="hiszpanski.html">.hiszpanski</a>
+	<header>
+		<nav class="navigation">
+			<a class="navigation__link" href="index.html">.początek</a>
+			<a class="navigation__link" href="hiszpanski.html">.hiszpanski</a>
 			<a class="navigation__link" href="crazy.html">.crazy</a>
-        </nav>
-	<main>
-		<header id="top">
-			<h1>.hiszpański z oka przymrużeniem dłuższym</h1> <!--h1 powinien być jedne dla całego dokumentu-->
-		</header>
-		<section>
-			<h2>.moje ulubione hiszpańskie słowa</h2>
-			<p>No to wypadałoby zacząć od ulubionego najbardziej. Nawet, jeśli wszyscy wiedzą, że wszelkie rankingi aktualne są tylko i wyłącznie na moment ich sporządzania (podobnie, jak harmonogramy w projektach).</p> <!--tekst nie może sobie luźno leżeć, stąd opakowujemy w znacznik p-->
-			<article> <!--artykuł to taka samodzielna treść-->
-				<h3>.mañana</h3>
-				<p>Nie mylić z manianą. Ani z jakimkolwiek innym polskim spolszczeniem.</p><!--tu sobie zrobiłam przejście do następnej linii using br-->
+		</nav>
+		<main class="grid">
+			<header id="top" class="header">
+				<h1>.hiszpański z oka przymrużeniem dłuższym</h1> <!--h1 powinien być jedne dla całego dokumentu-->
+			</header>
+			<article class="form">
+				<form action="https://forms.cotenfrontend.pl" method="post">
+					<p>
+						<label for="firstName">Imię</label>
+						<input id="firstName" name="firstName" type="text" value="Renata" placeholder="Wpisz imię"
+							required />
+					</p>
+					<p>
+						<label for="lastName">Nazwisko</label>
+						<input id="lastName" name="lastName" type="text" placeholder="Wpisz nazwisko" />
+					</p>
+					<p>
+						<label for="avatar">Avatar</label>
+						<input id="avatar" name="avatar" type="file" />
+					</p>
+					<fieldset>
+						<legend>Dane adresowe</legend>
+						<p>
+							<label for="street">Ulica</label>
+							<input id="street" name="street" type="text" placeholder="Twoja ulica" />
+						</p>
+						<p>
+							<label for="houseNumber">Dom</label>
+							<input id="houseNumber" name="houseNumber" type="number" placeholder="Numer domu" />
+						</p>
+						<p>
+							<label for="city">Miasto</label>
+							<input id="city" name="city" type="text" placeholder="Twoje miasto" />
+						</p>
+						<p>
+							<label for="postalCode">Kod pocztowy</label>
+							<input id="postalCode" name="postalCode" type="text" pattern="[0-9]{2}-[0-9]{3}"
+								placeholder="Kod pocztowy" />
+						</p>
+						<p>
+							<label for="phone">Telefon</label>
+							<input id="phone" name="phone" type="tel" placeholder="Twój telefon" />
+						</p>
+						<p>
+							<label for="eMail">E-mail</label>
+							<input id="eMail" name="eMail" type="email" placeholder="Twój email" required />
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>Ulubione ciastko</legend>
+						<p>
+							<label><input name="cake" type="radio" value="chocolate" />Czekoladowe</label>
+						</p>
+						<p>
+							<label><input checked name="cake" type="radio" value="brownie" />Brownie</label>
+						</p>
+						<p>
+							<label><input name="cake" type="radio" value="zakalec" />Zakalec</label>
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>Jaką kawę pijesz o poranku?</legend>
+						<p>
+							<label><input name="coffee" type="checkbox" value="americano" />Americano</label>
+						</p>
+						<p>
+							<label><input name="coffee" type="checkbox" value="espresso" />Espresso</label>
+						</p>
+						<p>
+							<label><input checked name="coffee" type="checkbox" value="latte" />Latte</label>
+						</p>
+					</fieldset>
+					<p>
+						<label for="favNumber">Ulubiona liczba</label>
+						<input id="favNumber" name="favNumber" type="range" min="0" max="12345" step="45" />
+					</p>
+					<p>
+						<label for="secret">Tajna wiadomość</label>
+						<input id="secret" name="secret" type="password" placeholder="Twoja tajna wiadomość" />
+					</p>
+					<p>
+						<label for="secretLong">Tajna dłuuuga wiadomość</label><br />
+						<textarea id="secretLong" name="secretLong"
+							placeholder="A tu Twoja dłuuuuga wiadomość"></textarea>
+					</p>
+					<p>
+						<label for="size">Wybierz rozmiar</label>
+						<select id="size" name="size" type="select">
+							<option value="s">S small</option>
+							<option selected value="m">M medium</option>
+							<option value="l">L large</option>
+							<option value="xl">XL extra large</option>
+						</select>
+					</p>
+					<p>
+						<input type="submit" value="Wyślij" />
+					</p>
+				</form>
 			</article>
-			<article> <!--artykuł to taka samodzielna treść-->
-				<h3>.hola</h3>
-				<p>Hola, hola, tu nie można palić!</p>
-			</article>
-		</section>
-	</main>
-    <footer> <!--ta stopka dotyczy całego dokumentu-->
-        <p>.to jest miejsce w przestrzeni stworzone, wykreowane, a może wymyślone i wyprodukowane do celów samorozwoju piszącej te słowa osoby, która nie wierzy, ale nieustannie i bezwarunkowo czuje, że każda chwila jest początkiem nowego życia.<a href="#top">Do góry 🚀</a></p>
-    </footer>
+			<aside class="aside">
+				<h2 class="header-aside--js">.moje ulubione hiszpańskie słowa</h2>
+				<p>No to wypadałoby zacząć od ulubionego najbardziej. Nawet, jeśli wszyscy wiedzą, że wszelkie rankingi
+					aktualne są tylko i wyłącznie na moment ich sporządzania (podobnie, jak harmonogramy w projektach).
+				</p> <!--tekst nie może sobie luźno leżeć, stąd opakowujemy w znacznik p-->
+					<h3>.mañana</h3>
+					<p>Nie mylić z manianą. Ani z jakimkolwiek innym polskim spolszczeniem.</p>
+					<!--tu sobie zrobiłam przejście do następnej linii using br-->
+					<h3>.hola</h3>
+					<p>Hola, hola, tu nie można palić!</p>
+			<button class="header-aside__button header-aside__button--js">Zmień nagłówek</button>
+				</aside>
+			
+		</main>
+		<footer> <!--ta stopka dotyczy całego dokumentu-->
+			<p>.to jest miejsce w przestrzeni stworzone, wykreowane, a może wymyślone i wyprodukowane do celów
+				samorozwoju piszącej te słowa osoby, która nie wierzy, ale nieustannie i bezwarunkowo czuje, że każda
+				chwila jest początkiem nowego życia.<a href="#top">Do góry 🚀</a></p>
+		</footer>
+		<script defer src="hiszpanski.js"></script>
 </body>
 
 </html>

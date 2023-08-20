@@ -1,10 +1,16 @@
 html {
     box-sizing: border-box;
-} /*fajnie mieć dla normalizacji*/
+}
 
-*, *:before, *:after {
+/*fajnie mieć dla normalizacji*/
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-} /*fajnie mieć dla normalizacji*/
+}
+
+/*fajnie mieć dla normalizacji*/
 
 body {
     background: #867d7db2;
@@ -32,9 +38,9 @@ body {
 }
 
 .section__header {
-    color:#025143;
+    color: #025143;
     letter-spacing: -2px;
-    font-size:34px;
+    font-size: 34px;
     font-weight: lighter;
 }
 
@@ -322,3 +328,49 @@ section a {
     border-left: 24px solid #589009;
     z-index: -10;
 }
+
+textarea {
+    width: 80vw;
+    min-height: 10rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "header header"
+        "article aside"
+        "footer footer";
+    grid-template-columns: 1fr 150px;
+    gap: 8px;
+
+    .header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        color: #025143;
+    }
+
+    .form {
+        background: #025143;
+        color: rgb(239, 206, 121);
+        padding: 8px;
+    }
+
+    .aside {
+        background: rgb(239, 206, 121);
+        padding: 8px;
+    }
+
+    .header-aside__button {
+        background: blue;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+
+    .footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
