@@ -17,5 +17,14 @@ header.innerHTML = '.bez strąka stronka' //<-- można skryptami zmienić treś�
 
 console.log(header.innerHTML)
 
-header.style.color = 'tomato'// <-- można skryptami zmieniać style
+//header.style.color = 'tomato'// <-- można skryptami zmieniać style
 console.log(header.style)
+
+const hamburger = document.querySelector('.hamburger--js');
+
+hamburger.addEventListener('click', () => {
+const navigation = document.querySelector('.navigation--js');
+navigation.classList.toggle('navigation--open');
+})
+
+

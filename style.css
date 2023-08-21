@@ -16,13 +16,19 @@ body {
     background: #867d7db2;
 }
 
-.navigation {
-    background: #717875;
-    padding: 16px;
+
+
+.sticky {
+    position: sticky;
+    /*whenever the top position of the element is at the top of the screen, it will stick to the page*/
+    /*margin-top: 50px; /*ustaliliśmy wysokość każdej sekcji na 100vh - 100px -> musimy obniżyć o 100px*/
 }
 
-.navigation__link {
-    color: aquamarine;
+.header {
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .page-header__heading {
@@ -79,7 +85,34 @@ section a {
     color: rgb(249, 226, 15);
 }
 
+.hamburger {
+    padding: 4px;
+    background: none;
+    border: 0;
+    font-size: 3rem;
+}
 
+.navigation {
+    padding: 16px;
+    background: #717875;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.navigation__link {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.navigation--open {
+    display: flex;
+}
 
 .box__display-block {
     background: #fbb92a;
@@ -341,36 +374,59 @@ textarea {
         "footer footer";
     grid-template-columns: 1fr 150px;
     gap: 8px;
+}
 
-    .header {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        color: #025143;
+.header--espanol {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #025143;
+}
+
+.form {
+    background: #025143;
+    color: rgb(239, 206, 121);
+    padding: 8px;
+}
+
+.aside {
+    background: rgb(239, 206, 121);
+    padding: 8px;
+}
+
+.header-aside__button {
+    background: #025143;
+    color: rgb(239, 206, 121);
+    font-weight: 700;
+    border: 0;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        padding: 16px;
+        background: #717875;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        gap: 24px;
     }
 
-    .form {
-        background: #025143;
-        color: rgb(239, 206, 121);
-        padding: 8px;
+    .navigation__link {
+        color: aquamarine;
+        text-decoration: none;
     }
 
-    .aside {
-        background: rgb(239, 206, 121);
-        padding: 8px;
+    .hamburger {
+        display: none;
     }
-
-    .header-aside__button {
-        background: blue;
-        color: white;
-        font-weight: 700;
-        border: 0;
-        display: inline-block;
-        padding: 4px 8px;
-        border-radius: 4px;
-    }
-
-    .footer {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    
+}
