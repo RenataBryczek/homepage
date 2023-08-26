@@ -56,8 +56,13 @@ body {
     line-height: 1.5;
 }
 
+.section--o-mnie:hover {
+    background-color: rgb(106, 5, 143)
+}
+
 .section__header--o-mnie {
     color: #0c82a0;
+    text-transform: uppercase;
 }
 
 article {
@@ -408,6 +413,32 @@ textarea {
     grid-column-end: 3;
 }
 
+.paragraph {
+    background: navy;
+    padding: 4px;
+    color: tomato;
+}
+
+.paragraph::before {
+    content: "Beforkowo witam";
+    display: block;
+    background: tomato;
+    color: white;
+}
+
+.paragraph::after {
+    content: "takim afterkiem";
+    background: white;
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    padding: 24px;
+}
+
+.paragraph:hover {
+    background: rgb(250, 206, 11);
+}
 
 @media screen and (min-width: 768px) {
     .navigation {
