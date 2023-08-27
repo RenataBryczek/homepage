@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cow": "cowsay Siemanko -r"
   },
   "author": "",
   "license": "ISC",
@@ -11,5 +12,9 @@
   "description": "",
   "dependencies": {
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "cowsay": "^1.5.0",
+    "parcel": "^2.9.3"
   }
 }
