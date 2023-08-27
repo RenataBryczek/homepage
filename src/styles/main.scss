@@ -31,24 +31,27 @@ body {
     align-items: center;
 }
 
-.page-header__heading {
-    color: #0c5fbe;
-    padding: 16px;
-    letter-spacing: 4px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.page-header {
+    &__heading {
+        color: #3a3d40;
+        padding: 16px;
+        letter-spacing: 4px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 }
 
 .section {
     background-color: #e0eecd;
     padding: 16px;
+
+    &__header {
+        color: #005848;
+        letter-spacing: -2px;
+        font-size: 34px;
+        font-weight: lighter;
+    }
 }
 
-.section__header {
-    color: #025143;
-    letter-spacing: -2px;
-    font-size: 34px;
-    font-weight: lighter;
-}
 
 .section--o-mnie {
     background-color: rgb(154, 250, 218);
