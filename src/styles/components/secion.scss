@@ -1,0 +1,11 @@
+.section {
+    background-color: #e0eecd;
+    padding: 16px;
+
+    &__header {
+        color: #005848;
+        letter-spacing: -2px;
+        font-size: 34px;
+        font-weight: lighter;
+    }
+}

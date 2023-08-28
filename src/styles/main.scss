@@ -1,3 +1,6 @@
+@import "components/secion.scss";
+@import "../../node_modules/normalize.css/normalize.css";
+
 html {
     box-sizing: border-box;
 }
@@ -40,17 +43,7 @@ body {
     }
 }
 
-.section {
-    background-color: #e0eecd;
-    padding: 16px;
 
-    &__header {
-        color: #005848;
-        letter-spacing: -2px;
-        font-size: 34px;
-        font-weight: lighter;
-    }
-}
 
 
 .section--o-mnie {
