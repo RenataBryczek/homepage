@@ -6,4 +6,4 @@ const clickFunction = (e) => {
     header.innerHTML = '.słowa hiszpańskie ulubione moje';
 }
 
-button.addEventListener('click', clickFunction)
+button.addEventListener('click', clickFunction);
